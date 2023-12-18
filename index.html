@@ -16,14 +16,14 @@
         github CLI, to get started on this. Head over to the <a class="link" href="https://github.com/cli/cli" target="_blank">official github repo</a> and follow the instructions 
         to install it in your operating system.
     </h4>
-    <h3 class="description">Once installed, you should be able to type "gh" in your command line and see something similar to this:
+    <h3 class="description">Once installed, you should be able to enter the command "gh" in your command line and see something similar to this:
     </h4>
     <div class="terminal">
         <h3 class="term_header">– □ x </h3>
         <div class="term_text_wrapper">
             <h3 class="term_command">~> gh</h3>
             <h3 class="term_text">
-                work seamlessly with GitHub from the command line.
+                work seamlessly with GitHub from the command line.       
             </h3>
             <h3 class="term_text">
                 USAGE
@@ -33,5 +33,140 @@
             </h3>
         </div>
     </div>
+    <h3 class="description">If your output is similar to that, congratulations. Github CLI is installed</h3>
+    <h3 class="description">Next step is to authenticate git with your github, enter the command "gh auth login" in your command line</h3>
+    <h3 class="description">You will be prompted some questions, do the following answer stated below:</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> gh auth login</h3>
+            <h3 class="term_text">
+                ? What account do you want to log into? <a class="term_answer">Github.com</a>
+            </h3>
+            <h3 class="term_text">
+                ? What is your preferred protocol for Git operations on this host? <a class="term_answer">HTTPS</a>
+            </h3>
+            <h3 class="term_text">
+                ? How would you like to authenticate GitHub CLI? <a class="term_answer">Login with a web browser       </a>
+            </h3>
+            <h3 class="term_text">
+                ! First copy your one-time code: XXXX-XXXX
+            </h3>
+            <h3 class="term_text">
+                Press Enter to open github.com in your browser...
+            </h3>
+        </div>
+    </div>
+    <h3 class="description">Now press enter and go to your web browser</h3>
+    <h3 class="description">Paste or enter the code given, and authorize the github</h3>
+    <h3 class="description">Once it's done, head over to the terminal and you should see this</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">....</h3>
+            <h3 class="term_text">
+                ✓ Authentication complete. 
+            </h3>
+            <h3 class="term_text">
+                - gh config set -h github.com git_protocol https       
+            </h3>
+            <h3 class="term_text">
+                ✓ Configured git protocol
+            </h3>
+            <h3 class="term_text">
+                ! Authentication credentials saved in plain text
+            </h3>
+            <h3 class="term_text">
+                ✓ Logged in as (Your github username)
+            </h3>
+        </div>
+    </div>
+    <h3 class="description">If your output is something like that, then the git is authorized with github</h3>
+    <h3 class="description">Next is just configuring your git config's global username and email</h3>
+    <h3 class="description">To do that follow the step below</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> git config --global user.email "(Your github email)"       </h3>
+            <h3 class="term_command">~> git config --global user.name "(Your github username)"</h3>
+        </div>
+    </div>
+    <h3 class="description">If you did that correctly and there is no error exception, git has been configured on your computer</h3>
+    <h2 class="subtitle">Git basic commands</h2>
+    <h3 class="subtitle">Creating a repo or a repository</h3>
+    <h3 class="description">First head to your project folder you want to upload to git</h3>
+    <h3 class="description">Then open your terminal in that and type in this command</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> git init      </h3>
+        </div>
+    </div>
+    <h3 class="description">It should create a git repo within the project folder</h3>
+    <h3 class="subtitle">Adding and commiting a change</h3>
+    <h3 class="description">To add files to your repo, simply type this command</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> git add (filename)      </h3>
+        </div>
+    </div>
+    <h2 class="description">Or</h2>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> git add .      </h3>
+        </div>
+    </div>
+    <h3 class="description">This will add files according to the syntax your using, the '.' means all files in that project folder</h3>
+    <h3 class="description">Now that it's added you can now commit or save your changes</h3>
+    <h3 class="description">To do that, type and enter this command:</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> git commit -m "(Your message)"      </h3>
+        </div>
+    </div>
+    <h3 class="description">You can change "Your message" to something like "Fixed the bug at line *" or something useful</h3>
+    <h3 class="subtitle">Creating and pushing git repo to github</h3>
+    <h3 class="description">Next if you want to save that to the git repo you would have to push it</h3>
+    <h3 class="description">But before that, you have to create the github repo first</h3>
+    <h3 class="description">To do that, simply type and enter this command</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> git repo create      </h3>
+        </div>
+    </div>
+    <h3 class="description">After that you'll be prompted some questions, answer as i do</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> ......      </h3>
+            <h3 class="term_text">What would you like to do? Push an existing local repository to <a>GitHub</a>       </h3>
+            <h3 class="term_text">? Path to local repository <a>.</a></h3>
+            <h3 class="term_text">? Repository name <a>(repository-name)</a></h3>
+            <h3 class="term_text">? Description <a>(repository-description)</a></h3>
+            <h3 class="term_text">? Visibility <a>Public</a></h3>
+            <h3 class="term_text">✓ Created repository (github-username/repository-name) on GitHub</h3>
+            <h3 class="term_text">? Add a remote? <a>Yes</a></h3>
+            <h3 class="term_text">? What should the new remote be called? <a>origin</a></h3>
+            <h3 class="term_text">✓ Added remote (https://github.com/github-username/repository-name.git)</h3>
+            <h3 class="term_text">? Would you like to push commits from the current branch to "origin"? <a>Yes</a></h3>
+        </div>
+    </div>
+    <h3 class="description">After that, you should see the push process in the terminal</h3>
+    <h3 class="description">Now with that out of the way you could now use git in the project folder without that hussle</h3>
+    <h3 class="subtitle">Pushing git commit to github (after creating the github repo)</h3>
+    <h3 class="description">After creating the github repo and push the existing commit to github, you can now use the push command</h3>
+    <h3 class="description">To do so, make sure you commited the changes and just type and enter this command</h3>
+    <div class="terminal">
+        <h3 class="term_header">– □ x </h3>
+        <div class="term_text_wrapper">
+            <h3 class="term_command">~> git push      </h3>
+        </div>
+    </div>
+    <h3 class="description">You should see the push process as in the push process you made when you create the github repo above</h3>
+    <h3 class="description" id="ending_text">Congrats, you just learned the basic of using git as a VCS(Version Control System)</h3>
 </body>
 </html>

@@ -1,0 +1,66 @@
+* {
+    background-color: black;
+    color: #FFFF00;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 2.5vh;
+    font-family: 'Inter';
+    margin-left: 5vw;
+}
+
+#title {
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+.subtitle {
+    margin-top: 7.5vh;
+    color: #00FFFF;
+}
+
+.link {
+    margin-right: 0;
+}
+
+.description {
+    margin-top: 3.5vh;
+    margin-right: 40vw;
+    color: #FF2A6A;
+}
+
+.terminal {
+    border: solid 1px #00FFFF;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    padding: 0;
+    max-width: fit-content;
+}
+
+.term_header {
+    margin: 0;
+    border-bottom: solid 1px #00FFFF;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.term_text_wrapper {
+    padding: 0px;
+    max-width: fit-content;
+    padding: 10px;
+}
+
+.term_text {
+    margin: 0;
+    padding: 0;
+    color: #FF2A6A;
+}
+
+.term_command {
+    margin: 0;
+    margin-bottom: 3vh;
+    padding: 0;
+    color: #FFFF00;
+}
